@@ -1,4 +1,4 @@
-<input type="text" class="input" (keyup)="filter($event)">
+<input type="text" class="input" placeholder="Search" (keyup)="filter($event)">
 <app-add-comment-form (addComment)="addComment($event)"></app-add-comment-form>
 <app-comment *ngFor="let comment of comments" [comment]="comment"></app-comment>
 <p *ngIf="comments.length === 0">Not found!</p>
